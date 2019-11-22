@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle 42-nightsquad-package",
+        "command": "42-nightsquad-package:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "42-nightsquad-package",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "42-nightsquad-package:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

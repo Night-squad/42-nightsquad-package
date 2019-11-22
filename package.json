@@ -1,0 +1,18 @@
+{
+  "name": "42-nightsquad-package",
+  "main": "./lib/42-nightsquad-package",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "42-nightsquad-package:toggle"
+  },
+  "repository": "https://github.com/Night-squad/42-nightsquad-package",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
