@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "nightsquad-package:toggle"
   },
-  "repository": "https://github.com/atom/nightsquad-package",
+  "repository": "https://github.com/Night-squad/42-nightsquad-package",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
