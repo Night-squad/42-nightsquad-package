@@ -4,9 +4,6 @@
   "version": "0.2.0",
   "description": "A short description of your package",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "nightsquad-package:toggle"
-  },
   "repository": "https://github.com/Night-squad/42-nightsquad-package",
   "license": "MIT",
   "engines": {
