@@ -1,7 +1,7 @@
 {
   "name": "42-nightsquad-package",
   "main": "./lib/nightsquad-package",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/Night-squad/42-nightsquad-package",
