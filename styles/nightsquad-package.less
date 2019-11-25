@@ -14,7 +14,7 @@
 	display: block;
 	width: 50%;
 	height: 15%;
-	background-color: #ff5252;
+	background-color: var(--data-color);;
 	border: 0;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -27,35 +27,96 @@
 	display: block;
 }
 
+.home {
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .progress-circle {
 	position: relative;             /* pour servir de référent */
+	position: absolute;
+	left: 50%;
+	top: 50%; /* poussé de la moitié de hauteur du référent */
+	transform: translate(-50%, -50%); /* tiré de la moitié de sa propre hauteur */
     box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-    font-size: 5em;                 /* pour définir les dimensions */
+    font-size: 9em;                 /* pour définir les dimensions */
     width: 1em;                     /* fixe la largeur */
     height: 1em;                    /* fixe la hauteur */
     border-radius: 50%;             /* rendu aspect circulaire */
-    border: .15em solid #CDE;       /* couleur de fond de l'anneau */
   }
 
   .progress-circle:after {
-  content: attr(level) "%";  /* récup. valeur de progression */
-  font-size: 0.15em;              /* taille de la font en % du parent */
-  height: 100%;                   /* centrage dans le parent */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	  text-align: center;
+	  font-size: 0.15em;				/* taille de la font en % du parent */
+	  height: 100%;						/* centrage dans le parent */
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
 
-  /*-- pour effet shadow intérieur --*/
-  border-radius: 50%;
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .5) inset;
+	  /*-- pour effet shadow intérieur --*/
+	  border-radius: 50%;
+}
+
+.level {
+	position: absolute;
+	width: 0.8em;                     /* 100% de la largeur */
+	height: 0.8em;                    /* 100% de la hauteur */
+	left: 0.1em;                   /* décalage de la largeur bordure de la gauge */
+    top: 0.1em;                    /* décalage de la largeur bordure de la gauge */
+	border-radius: 50%;             /* rendu aspect circulaire */
+	background-color: white;
+}
+
+.level:after {
+	font-weight: bold;
+	padding-bottom: 20%;
+	padding-left: 8px;
+	text-align: center;
+	font-size: 0.09em;				/* taille de la font en % du parent */
+	height: 100%;						/* centrage dans le parent */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*-- pour effet shadow intérieur --*/
+	border-radius: 50%;
+	color: var(--data-color);
+	content: "level " attr(level); /* récup. valeur de progression */
+}
+
+.percentage {
+	position: absolute;
+    width: 1em;                     /* 100% de la largeur */
+    height: 1em;                    /* 100% de la hauteur */
+	left: 0em;                   /* décalage de la largeur bordure de la gauge */
+    top: 0em;                    /* décalage de la largeur bordure de la gauge */
+}
+
+.percentage:after {
+	padding-top: 10%;
+	text-align: center;
+	font-size: 0.14em;				/* taille de la font en % du parent */
+	height: 100%;						/* centrage dans le parent */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	/*-- pour effet shadow intérieur --*/
+	border-radius: 50%;
+	color: var(--data-color);
+	content: attr(data-value) "%"; /* récup. valeur de progression */
 }
 
   .progress-masque {
   position: absolute;
   width: 1em;                     /* 100% de la largeur */
   height: 1em;                    /* 100% de la hauteur */
-  left: -.15em;                   /* décalage de la largeur bordure de la gauge */
-  top: -.15em;                    /* décalage de la largeur bordure de la gauge */
+  left: 0em;                   /* décalage de la largeur bordure de la gauge */
+  top: 0em;                    /* décalage de la largeur bordure de la gauge */
   clip: rect(0, 1em, 1em, .5em);  /* par défaut seule la partie droite est visible */
 }
 
@@ -63,9 +124,9 @@
 .progress-sup50 {
   position: absolute;
   box-sizing: border-box;         /* prise en compte bordure dans la dimension */
-  border-width: .15em;            /* largeur bordure de la gauge */
+  border-width: .10em;            /* largeur bordure de la gauge */
   border-style: solid;
-  border-color: #069;
+  border-color: var(--data-color);;
   border-radius: 50%;             /* rendu aspect circulaire */
   width: 1em;                     /* largeur à 100% */
   height: 1em;                    /* hauteur à 100% */
