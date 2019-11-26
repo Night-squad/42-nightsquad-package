@@ -1,5 +1,11 @@
 # nightsquad-package package
 
-A short description of your package.
+NightSquad Package is a dashboard for 42 students
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## For an optimal experience, we recommend you to install these themes
+
+* [42-nightsquad-ui](https://github.com/Night-squad/42-nightsquad-ui) - Atom UI Theme 
+* [42-nightsquad-syntax](https://github.com/Night-squad/42-nightsquad-syntax) - Atom Syntax Theme 
+
+
+![A screenshot of your package](https://nightsquad.space/assets/img/capture.png)
