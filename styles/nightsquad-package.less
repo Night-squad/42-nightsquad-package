@@ -7,31 +7,65 @@
 /** PACKAGE **/
 .nightsquad-package {
 	height: 20%;
+	min-height: 260px;
 }
 
 atom-pane-container{
 	flex-direction: column;
 }
 
-
 /** CONNECTION **/
 .nightsquad-package .connectButton{
+	background: linear-gradient(to right, var(--data-color) 50%, #3F3737 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    transition:all 0.5s ease;
+	position: relative;
 	margin: auto;
-	margin-bottom: 20px;
 	display: block;
-	width: 50%;
-	height: 15%;
-	background-color: var(--data-color);
+	max-width: 200px;
+	padding-top: 4px;
+	padding-bottom: 4px;
 	border: 0;
+	border-left: 3px var(--data-color) solid;
+	background-color: #3f3737;
 	font-weight: bold;
 	text-transform: uppercase;
+	background-position: right bottom;
 	font-family: "Futura PT", Futura, Helvetica, "Sans serif";
+	flex: 1;
 }
 
-.nightsquad-package .logo{
+.nightsquad-package .connectButton:hover{
+	background-position: left bottom;
+	background-color: var(--data-color);
+}
+
+.nightsquad-package .logo {
+	padding-top: 10px;
 	height: 80%;
 	margin: auto;
 	display: block;
+}
+
+.nightsquad-package .barConnect {
+	display: flex;
+	margin: 5px auto;
+	height: 30px;
+}
+
+.nightsquad-package .barConnect a {
+	height: 100%;
+}
+
+.nightsquad-package .github {
+	height: 100%;
+	margin: 0px 5px;
+}
+
+.nightsquad-package .website{
+	height: 100%;
+	margin: 0px 5px;
 }
 
 /** LOADING **/
@@ -40,9 +74,8 @@ atom-pane-container{
 	width: 100%;
 }
 
-.loading loattie-player {
-	height: 100%;
-	width: 100%;
+.loading loattie-player{
+	min-height: 100%;
 }
 
 /** HOME **/
