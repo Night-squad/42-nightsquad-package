@@ -34,6 +34,16 @@ atom-pane-container{
 	display: block;
 }
 
+/** LOADING **/
+.loading {
+	height: 100%;
+	width: 100%;
+}
+
+.loading loattie-player {
+	height: 100%;
+	width: 100%;
+}
 
 /** HOME **/
 .home {
@@ -194,7 +204,7 @@ atom-pane-container{
 .user_coalition .trophy{
 	padding-top: 8px;
 	padding-left: 10px;
-	height: 19px;
+	height: 18px;
 }
 
 .user_coalition .rank{
@@ -205,7 +215,7 @@ atom-pane-container{
 .user_coalition .grade{
 	padding-top: 8px;
 	padding-left: 2px;
-	height: 19px;
+	height: 18px;
 }
 
 .coalition_tab {
@@ -276,22 +286,16 @@ atom-pane-container{
 	display: none;
 }
 
-.disconnect:hover {
-	cursor: pointer;
+.disconnect img {
+	position: absolute;
+	padding: 0px;
+	margin-top: 20px;
+	margin-left: 17px;
+	height: 10px;
 }
 
-.disconnect:after {
-	font-weight: bold;
-	text-align: center;
-	font-size: 0.20em;				/* taille de la font en % du parent */
-	height: 100%;						/* centrage dans le parent */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/*-- pour effet shadow intérieur --*/
-	border-radius: 50%;
-	color: var(--data-color);
-	content: 'X'; /* récup. valeur de progression */
+.disconnect:hover {
+	cursor: pointer;
 }
 
 .level {
