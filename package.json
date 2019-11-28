@@ -2,7 +2,7 @@
   "name": "42-nightsquad-package",
   "main": "./lib/nightsquad-package",
   "version": "0.14.5",
-  "description": "A short description of your package",
+  "description": "NightSquad Package is a dashboard for 42 students.",
   "keywords": [],
   "repository": "https://github.com/Night-squad/42-nightsquad-package",
   "license": "MIT",
