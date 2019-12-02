@@ -1,7 +1,7 @@
 {
   "name": "42-nightsquad-package",
   "main": "./lib/nightsquad-package",
-  "version": "0.14.7",
+  "version": "0.14.8",
   "description": "NightSquad Package is a dashboard for 42 students.",
   "keywords": [],
   "repository": "https://github.com/Night-squad/42-nightsquad-package",
