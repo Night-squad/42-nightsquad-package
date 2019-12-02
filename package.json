@@ -1,15 +1,19 @@
 {
-  "name": "42-nightsquad-package",
-  "main": "./lib/nightsquad-package",
-  "version": "0.14.10",
-  "description": "NightSquad Package is a dashboard for 42 students.",
-  "keywords": [],
-  "repository": "https://github.com/Night-squad/42-nightsquad-package",
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
-    "jquery": "^3.1.4"
-  }
+	"name": "42-nightsquad-package",
+	"main": "./lib/nightsquad-package",
+	"version": "0.14.10",
+	"description": "NightSquad Package is a dashboard for 42 students.",
+	"keywords": [],
+	"repository": "https://github.com/Night-squad/42-nightsquad-package",
+	"keywords": [
+  		"42",
+  		"intra"
+	],
+	"license": "MIT",
+	"engines": {
+		"atom": ">=1.0.0 <2.0.0"
+	},
+	"dependencies": {
+		"jquery": "^3.1.4"
+	}
 }
