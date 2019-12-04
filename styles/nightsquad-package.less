@@ -145,13 +145,35 @@ atom-pane-container{
 	font-weight: bold;
 }
 
-/** CALENDAR **/
-.calendar {
+/** AGENDA **/
+.agenda {
 	grid-row: 1;
-	border-right: 1px var(--data-color) solid;
-	border-bottom: 1px var(--data-color) solid;
-	opacity: 0.5;
 	grid-column: 1;
+}
+
+.agenda_tab {
+	position: relative;
+	margin: 7px 10px 0 10px;
+}
+
+.agenda_tab .line {
+	border-left: 2px solid var(--data-color);
+	padding: 5px;
+	background-color: #3f3737;
+	margin: 3px 0;
+}
+
+.agenda_tab .line h3 {
+	color: #9f9b9b;
+	font-size: 9px;
+	font-weight: bold;
+	flex: 2;
+}
+
+.agenda_tab .line span {
+	color: white;
+	font-size: 9px;
+	width: fit-content;
 }
 
 /** MY-DATA **/
